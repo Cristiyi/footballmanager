@@ -59,6 +59,20 @@ export const constantRouterMap = [
       }
     ]
   },
+  //联赛
+  {
+    path: '/league',
+    component: Layout,
+    meta: { title: 'league', icon: 'dashboard' },
+    children: [
+      {
+        path: 'league',
+        name: 'league',
+        component: () => import('@/views/league/League'),
+        meta: { title: 'league', icon: 'dashboard' }
+      }
+    ]
+  },
   // 图表
   {
     path: '/charts',
